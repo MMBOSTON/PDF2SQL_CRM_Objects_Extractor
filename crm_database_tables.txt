@@ -1,0 +1,265 @@
+Table: crm_accounts
+Column	Type	Null	Default
+id	int(11)	No
+account_name	varchar(100)	No
+account_type	int(11)	No
+description	Text	No
+parent_account	int(11)	No
+phone	varchar(50)	No
+website	varchar(100)	No
+industry	int(11)	No
+employees	int(11)	No
+billing_address	text	No
+billing_street	varchar(50)	No
+billing_city	varchar(50)	No
+billing_state	varchar(50)	No
+billing_post_code	varchar(20)	No
+billing_country	int(11)	No
+shipping_address	text	No
+shipping_street	varchar(50)	No
+shipping_city	varchar(50)	No
+shipping_state	varchar(50)	No
+shipping_post_code	varchar(20)	No
+shipping_country	int(11)	No
+assign_to	int(11)	No
+created_at	timestamp	Yes	NULL
+created_by	int(11)	No
+updated_at	timestamp	Yes	NULL
+updated_by	int(11)	No
+deleted_at	timestamp	Yes	NULL
+deleted_by	int(11)	No
+project_id	int(11)	No
+valid	tinyint(1)	No
+
+Table: crm_activities
+Column	Type	Null	Default
+id	int(11)	No
+activity_name	varchar(100)	No
+activity_link	varchar(50)	No
+activity_icon	varchar(50)	No
+search_url	varchar(100)	No
+sl_no	int(11)	No
+
+Table: crm_contacts
+Column	Type	Null	Default
+Id	int(11)	No
+account_id	int(11)	No
+name_title	int(11)	No
+first_name	varchar(50)	No
+last_name	varchar(50)	No
+Surname	varchar(50)	No
+Designation	varchar(100)	No
+Department	varchar(100)	No
+full_address	text	No
+Street	varchar(50)	No
+City	varchar(50)	No
+State	varchar(50)	No
+post_code	varchar(20)	No
+Country	int(11)	No
+Mobile	varchar(50)	No
+office_phone	varchar(50)	No
+Fax	varchar(50)	No
+Website	varchar(100)	No
+Email	varchar(100)	No
+Industry	int(11)	No
+Note	text	No
+nature_id	int(11)	No
+Image	varchar(50)	No
+assign_to	int(11)	No
+created_at	timestamp	Yes	NULL
+created_by	int(11)	No
+updated_at	timestamp	Yes	NULL
+updated_by	int(11)	No
+deleted_at	timestamp	Yes	NULL
+deleted_by	int(11)	No
+project_id	int(11)	No
+Valid	tinyint(1)	No
+
+Table: crm_leads
+Column	Type	Null	Default
+Id	int(11)	No
+generated_lead_id	varchar(20)	No
+csv_id	int(11)	No
+csv_file	int(11)	No
+name_title	int(11)	No
+first_name	varchar(50)	No
+last_name	varchar(50)	No
+Surname	varchar(50)	No
+Designation	varchar(100)	No
+Department	varchar(100)	No
+full_address	text	No
+Street	varchar(50)	No
+City	varchar(50)	No
+State	varchar(50)	No
+post_code	varchar(20)	No
+Country	int(11)	No
+Mobile	varchar(50)	No
+office_phone	varchar(50)	No
+Fax	varchar(50)	No
+Website	varchar(100)	No
+Email	varchar(100)	No
+company_name	varchar(100)	No
+Industry	int(11)	No
+Employees	int(11)	No
+lead_description	varchar(200)	No
+Rating	int(11)	No
+lead_source	int(11)	No
+Campaign	int(11)	No
+lead_referred_by	varchar(100)	No
+assign_to	int(11)	No
+step_one_status	tinyint(4)	No
+step_one_date	timestamp	Yes	NULL
+step_two_status	tinyint(4)	No
+step_two_date	timestamp	Yes	NULL
+step_three_status	tinyint(4)	No
+step_three_date	timestamp	Yes	NULL
+step_four_status	tinyint(4)	No
+step_four_date	timestamp	Yes	NULL
+step_five_status	tinyint(4)	No
+step_five_date	timestamp	Yes	NULL
+Stage	tinyint(4)	No
+created_at	timestamp	Yes	NULL
+created_by	int(11)	No
+updated_at	timestamp	Yes	NULL
+updated_by	int(11)	No
+deleted_at	timestamp	Yes	NULL
+deleted_by	int(11)	No
+project_id	int(11)	No
+Valid	tinyint(1)	No
+
+Table: crm_lead_info_basic
+Column	Type	Null	Default
+Id	int(11)	No
+generated_lead_id	varchar(20)	No
+csv_id	int(11)	No
+csv_file	int(11)	No
+first_name	varchar(50)	No
+last_name	varchar(50)	No
+Designation	varchar(100)	No
+Department	varchar(100)	No
+company_name	varchar(100)	No
+full_address	text	No
+lead_email	varchar(100)	No
+lead_mobile	varchar(22)	No
+lead_office_phone	varchar(100)	No
+Website	varchar(100)	No
+lead_source	int(11)	No
+lead_source_description	varchar(200)	No
+lead_referred_by	varchar(100)	No
+lead_description	varchar(200)	No
+assign_to	int(11)	No
+Status	tinyint(4)	No
+created_at	timestamp	Yes	NULL
+created_by	int(11)	No
+updated_at	timestamp	Yes	NULL
+updated_by	int(11)	No
+deleted_at	timestamp	Yes	NULL
+deleted_by	int(11)	No
+project_id	int(11)	No
+Valid	tinyint(1)	No
+
+Table: crm_lead_opportunities
+Column	Type	Null	Default
+Id	int(11)	No
+lead_id	int(11)	No
+lead_opportunities_status	int(11)	No
+lead_opportunities_description	varchar(200)	No
+lead_category	int(11)	No
+currency_id	int(11)	No
+lead_opportunities_amount	float(8,2)	No
+Probability	Float	No
+created_at	Timestamp	Yes	NULL
+created_by	int(11)	No
+updated_at	Timestamp	Yes	NULL
+updated_by	int(11)	No
+deleted_at	Timestamp	Yes	NULL
+deleted_by	int(11)	No
+project_id	int(11)	No
+Valid	tinyint(1)	No
+
+Table: crm_lead_products
+Column	Type	Null	Default
+Id	int(11)	No
+lead_id	int(11)	No
+product_id	int(11)	No
+created_at	timestamp	Yes	NULL
+created_by	int(11)	No
+updated_at	timestamp	Yes	NULL
+updated_by	int(11)	No
+deleted_at	timestamp	Yes	NULL
+deleted_by	int(11)	No
+project_id	int(11)	No
+Valid	tinyint(1)	No
+
+Table: crm_lead_source
+Column	Type	Null	Default
+Id	int(11)	No
+source_name	varchar(50)	No
+created_at	timestamp	Yes	NULL
+created_by	int(11)	No
+updated_at	timestamp	Yes	NULL
+updated_by	int(11)	No
+deleted_at	timestamp	Yes	NULL
+deleted_by	int(11)	No
+project_id	int(11)	No
+Valid	tinyint(1)	No
+
+Table: crm_opportunities
+Column	Type	Null	Default
+Id	int(11)	No
+account_id	int(11)	No
+opportunity_name	varchar(100)	No
+opportunity_type	int(11)	No
+opportunity_source	int(11)	No
+campaign_source	int(11)	No
+budget_confirmed	tinyint(1)	No
+analysis_completed	tinyint(1)	No
+Status	int(11)	No
+Category	int(11)	No
+step_one_status	tinyint(4)	No
+step_one_date	timestamp	Yes	NULL
+step_two_status	tinyint(4)	No
+step_two_date	timestamp	Yes	NULL
+step_three_status	tinyint(4)	No
+step_three_date	timestamp	Yes	NULL
+step_four_status	tinyint(4)	No
+step_four_date	timestamp	Yes	NULL
+step_five_status	tinyint(4)	No
+step_five_date	timestamp	Yes	NULL
+step_final_status	tinyint(1)	No
+step_final_date	timestamp	Yes	NULL
+Stage	int(11)	No
+Probability	tinyint(4)	No
+currency_id	int(11)	No
+opportunity_amount	float(11,2)	No
+proposed_amount	float(11,2)	No
+actual_amount	float(11,2)	No
+closed_date	date	No
+lost_reason_id	int(11)	No
+lost_reason_details	text	No
+assign_to	int(11)	No
+created_at	timestamp	Yes	NULL
+created_by	int(11)	No
+updated_at	timestamp	Yes	NULL
+updated_by	int(11)	No
+deleted_at	timestamp	Yes	NULL
+deleted_by	int(11)	No
+project_id	int(11)	No
+Valid	tinyint(1)	No
+
+Table: crm_opportunity_contact
+Column	Type	Null	Default
+Id	int(11)	No
+opportunity_id	int(11)	No
+contact_id	int(11)	No
+role_id	int(11)	No
+is_primary	tinyint(1)	Yes	NULL
+created_at	timestamp	Yes	NULL
+created_by	int(11)	No
+updated_at	timestamp	Yes	NULL
+updated_by	int(11)	No
+deleted_at	timestamp	Yes	NULL
+deleted_by	int(11)	No
+project_id	int(11)	No
+Valid	tinyint(1)	No
+

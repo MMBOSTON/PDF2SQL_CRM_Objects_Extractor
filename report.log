@@ -1,0 +1,101 @@
+2024-07-03 13:14:45,933 - INFO - Extracted 10 tables
+2024-07-03 13:14:45,933 - INFO - Cleaned 10 tables
+2024-07-03 13:14:45,933 - INFO - 
+Table: crm_accounts
+2024-07-03 13:14:45,933 - INFO - Columns: ['Column', 'Type', 'Null', 'Default']
+2024-07-03 13:14:45,933 - INFO - Data rows: 30
+2024-07-03 13:14:45,933 - INFO - First few rows of data:
+2024-07-03 13:14:45,933 - INFO - ['id', 'int(11)', 'No']
+2024-07-03 13:14:45,933 - INFO - ['account_name', 'varchar(100)', 'No']
+2024-07-03 13:14:45,933 - INFO - ['account_type', 'int(11)', 'No']
+2024-07-03 13:14:45,933 - INFO - 
+Table: crm_activities
+2024-07-03 13:14:45,933 - INFO - Columns: ['Column', 'Type', 'Null', 'Default']
+2024-07-03 13:14:45,933 - INFO - Data rows: 6
+2024-07-03 13:14:45,933 - INFO - First few rows of data:
+2024-07-03 13:14:45,933 - INFO - ['id', 'int(11)', 'No']
+2024-07-03 13:14:45,933 - INFO - ['activity_name', 'varchar(100)', 'No']
+2024-07-03 13:14:45,933 - INFO - ['activity_link', 'varchar(50)', 'No']
+2024-07-03 13:14:45,933 - INFO - 
+Table: crm_contacts
+2024-07-03 13:14:45,933 - INFO - Columns: ['Column', 'Type', 'Null', 'Default']
+2024-07-03 13:14:45,933 - INFO - Data rows: 32
+2024-07-03 13:14:45,933 - INFO - First few rows of data:
+2024-07-03 13:14:45,933 - INFO - ['Id', 'int(11)', 'No']
+2024-07-03 13:14:45,933 - INFO - ['account_id', 'int(11)', 'No']
+2024-07-03 13:14:45,933 - INFO - ['name_title', 'int(11)', 'No']
+2024-07-03 13:14:45,933 - INFO - 
+Table: crm_leads
+2024-07-03 13:14:45,947 - INFO - Columns: ['Column', 'Type', 'Null', 'Default']
+2024-07-03 13:14:45,947 - INFO - Data rows: 49
+2024-07-03 13:14:45,948 - INFO - First few rows of data:
+2024-07-03 13:14:45,949 - INFO - ['Id', 'int(11)', 'No']
+2024-07-03 13:14:45,949 - INFO - ['generated_lead_id', 'varchar(20)', 'No']
+2024-07-03 13:14:45,950 - INFO - ['csv_id', 'int(11)', 'No']
+2024-07-03 13:14:45,950 - INFO - 
+Table: crm_lead_info_basic
+2024-07-03 13:14:45,951 - INFO - Columns: ['Column', 'Type', 'Null', 'Default']
+2024-07-03 13:14:45,952 - INFO - Data rows: 28
+2024-07-03 13:14:45,952 - INFO - First few rows of data:
+2024-07-03 13:14:45,952 - INFO - ['Id', 'int(11)', 'No']
+2024-07-03 13:14:45,953 - INFO - ['generated_lead_id', 'varchar(20)', 'No']
+2024-07-03 13:14:45,953 - INFO - ['csv_id', 'int(11)', 'No']
+2024-07-03 13:14:45,953 - INFO - 
+Table: crm_lead_opportunities
+2024-07-03 13:14:45,954 - INFO - Columns: ['Column', 'Type', 'Null', 'Default']
+2024-07-03 13:14:45,954 - INFO - Data rows: 16
+2024-07-03 13:14:45,954 - INFO - First few rows of data:
+2024-07-03 13:14:45,955 - INFO - ['Id', 'int(11)', 'No']
+2024-07-03 13:14:45,955 - INFO - ['lead_id', 'int(11)', 'No']
+2024-07-03 13:14:45,955 - INFO - ['lead_opportunities_status', 'int(11)', 'No']
+2024-07-03 13:14:45,956 - INFO - 
+Table: crm_lead_products
+2024-07-03 13:14:45,956 - INFO - Columns: ['Column', 'Type', 'Null', 'Default']
+2024-07-03 13:14:45,957 - INFO - Data rows: 11
+2024-07-03 13:14:45,957 - INFO - First few rows of data:
+2024-07-03 13:14:45,957 - INFO - ['Id', 'int(11)', 'No']
+2024-07-03 13:14:45,957 - INFO - ['lead_id', 'int(11)', 'No']
+2024-07-03 13:14:45,958 - INFO - ['product_id', 'int(11)', 'No']
+2024-07-03 13:14:45,958 - INFO - 
+Table: crm_lead_source
+2024-07-03 13:14:45,958 - INFO - Columns: ['Column', 'Type', 'Null', 'Default']
+2024-07-03 13:14:45,959 - INFO - Data rows: 10
+2024-07-03 13:14:45,959 - INFO - First few rows of data:
+2024-07-03 13:14:45,959 - INFO - ['Id', 'int(11)', 'No']
+2024-07-03 13:14:45,959 - INFO - ['source_name', 'varchar(50)', 'No']
+2024-07-03 13:14:45,960 - INFO - ['created_at', 'timestamp', 'Yes', 'NULL']
+2024-07-03 13:14:45,960 - INFO - 
+Table: crm_opportunities
+2024-07-03 13:14:45,960 - INFO - Columns: ['Column', 'Type', 'Null', 'Default']
+2024-07-03 13:14:45,960 - INFO - Data rows: 40
+2024-07-03 13:14:45,961 - INFO - First few rows of data:
+2024-07-03 13:14:45,961 - INFO - ['Id', 'int(11)', 'No']
+2024-07-03 13:14:45,961 - INFO - ['account_id', 'int(11)', 'No']
+2024-07-03 13:14:45,961 - INFO - ['opportunity_name', 'varchar(100)', 'No']
+2024-07-03 13:14:45,961 - INFO - 
+Table: crm_opportunity_contact
+2024-07-03 13:14:45,961 - INFO - Columns: ['Column', 'Type', 'Null', 'Default']
+2024-07-03 13:14:45,962 - INFO - Data rows: 13
+2024-07-03 13:14:45,962 - INFO - First few rows of data:
+2024-07-03 13:14:45,962 - INFO - ['Id', 'int(11)', 'No']
+2024-07-03 13:14:45,962 - INFO - ['opportunity_id', 'int(11)', 'No']
+2024-07-03 13:14:45,962 - INFO - ['contact_id', 'int(11)', 'No']
+2024-07-03 13:14:45,964 - INFO - Data written to crm_database_tables.txt
+2024-07-03 13:14:45,968 - INFO - Schema written to crm_database_schema.sql
+2024-07-03 13:14:45,972 - INFO - 
+DataFrame Info:
+2024-07-03 13:14:45,990 - INFO - None
+2024-07-03 13:14:45,990 - INFO - 
+First few rows of DataFrame:
+2024-07-03 13:14:45,991 - INFO -           Table          Column          Type Null Default
+0  crm_accounts              id       int(11)   No        
+1  crm_accounts    account_name  varchar(100)   No        
+2  crm_accounts    account_type       int(11)   No        
+3  crm_accounts     description          Text   No        
+4  crm_accounts  parent_account       int(11)   No        
+2024-07-03 13:14:46,021 - INFO - 
+Summary:
+2024-07-03 13:14:46,021 - INFO - - Extracted 10 tables from PDF
+2024-07-03 13:14:46,022 - INFO - - Cleaned and processed 10 tables
+2024-07-03 13:14:46,023 - INFO - - Generated 235 rows of data
+2024-07-03 13:14:46,023 - INFO - - Output files: crm_database_tables.txt, crm_database_schema.sql, crm_database_schema.csv
