@@ -1,28 +1,10 @@
-MMBOSTON: conda install pdfplumber pandas 
-
-GitHub Copilot: ```plaintext
-conda install -c conda-forge pdfplumber pandas
-```
-
-MMBOSTON: conda-forge install of pdfplumber taking forever. Should I do pip install?
-
-GitHub Copilot: Yes, if the `conda` installation from the `conda-forge` channel is taking an unusually long time or seems to be stuck, using `pip` as an alternative can be a good option. `pip` is Python's package installer and can install packages from the Python Package Index (PyPI), where `pdfplumber` and [`pandas`](command:_github.copilot.openSymbolFromReferences?%5B%7B%22%24mid%22%3A1%2C%22path%22%3A%22%2Fc%3A%2FProgramData%2FAnaconda3%2Fenvs%2Fsnowfakery_env%2FLib%2Fsite-packages%2Fpandas%2F__init__.py%22%2C%22scheme%22%3A%22file%22%7D%2C%7B%22line%22%3A0%2C%22character%22%3A0%7D%5D "../../../../../ProgramData/Anaconda3/envs/snowfakery_env/Lib/site-packages/pandas/__init__.py") are available. Here's how you can do it:
-
-```plaintext
-pip install pdfplumber pandas
-```
-
-MMBOSTON: can you review the attached python script and write a detail overview on what it is, what does it do and how does it function.......so I can add into my README.md file?
-
-GitHub Copilot: This Python script, named [`pdf2sql_extractor.py`](command:_github.copilot.openRelativePath?%5B%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fc%3A%2FUsers%2F16175%2FDocuments%2FGitHub%2FPDF2SQL_CRM_Objects_Extractor%2Fpdf2sql_extractor.py%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%5D "c:\Users\16175\Documents\GitHub\PDF2SQL_CRM_Objects_Extractor\pdf2sql_extractor.py"), is designed to extract table structures from PDF documents and convert them into various formats suitable for database schema creation and data analysis. The script performs several key functions, including reading tables from a PDF, cleaning and organizing the data, and outputting the results in text, SQL schema, and CSV formats. Here's a detailed overview of its functionality and operation:
-
 ### Overview
 
 The script is a comprehensive tool for extracting structured table data from PDF files, specifically focusing on tables that represent database schemas or similar structured data. It is particularly useful for converting legacy documents or reports into actionable database schemas or for data analysis purposes.
 
 ### Functionality
 
-1. **PDF Table Extraction**: It uses the [`pdfplumber`](command:_github.copilot.openSymbolFromReferences?%5B%7B%22%24mid%22%3A1%2C%22path%22%3A%22%2Fc%3A%2FProgramData%2FAnaconda3%2Fenvs%2Fstreamlit_apps%2FLib%2Fsite-packages%2Fpdfplumber%2F__init__.py%22%2C%22scheme%22%3A%22file%22%7D%2C%7B%22line%22%3A0%2C%22character%22%3A0%7D%5D "../../../../../ProgramData/Anaconda3/envs/streamlit_apps/Lib/site-packages/pdfplumber/__init__.py") library to open and read through each page of a specified PDF document, extracting text and identifying tables based on predefined patterns (e.g., lines starting with "Table" followed by "Table structure for table").
+1. **PDF Table Extraction**: It uses the [`pdfplumber`] library to open and read through each page of a specified PDF document, extracting text and identifying tables based on predefined patterns (e.g., lines starting with "Table" followed by "Table structure for table").
 
 2. **Data Cleaning and Organization**: After extraction, the script organizes the data into tables, cleans it by removing unwanted lines (e.g., footers), and prepares it for further processing. It identifies table names and their corresponding columns and data rows.
 
