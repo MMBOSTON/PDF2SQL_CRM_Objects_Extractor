@@ -38,7 +38,7 @@ This script is a powerful tool for automating the extraction of structured data 
 
 ### CRUD OPERATIONS
 
-# Pseudocode for the provided Python file (crud_operations.py)
+### Pseudocode for the provided Python file (crud_operations.py)
 
 1. Import necessary libraries and modules.
 2. Set up logging to both terminal and file.
